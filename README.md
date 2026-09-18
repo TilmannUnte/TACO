@@ -30,8 +30,3 @@ algorithm. This can be visualized by using the *gui.py* script.
 Regarding WCET analysis, you can use the included *aiT.ais* annotations file.
 The *report.txt* contains the output of the aiT analysis used in the paper.
 
-## NOTE FOR REVIEW PHASE
-
-- Copyright holder and benchmark name information has been redacted
-- report.txt file has been modified to remove folder and host computer names that could lead to unblinding
-- aiT project file has been withheld, as it contains unblinding info which is challenging to remove

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.absint.com/dtd/a3-results-25.10.xsd" xmlns="http://www.absint.com/a3results" build="18160044" tag="auto/2025/10/17/1922" version="25.10" target="arm">
+    <result id="aiT" type="aiT" error_count="0" warning_count="0" analysis_start="calculate_obstacles" analysis_status="success" analysis_start_time="2026-08-06T11:42:26" analysis_end_time="2026-08-06T11:43:14" analysis_time="47" analysis_maximum_memory="270" decoding_rounds="1" timestamp="2026-08-06T11:42:56">
+        <cycles>1363216668</cycles>
+        <unit>cycles</unit>
+        <time></time>
+        <expectation>success</expectation>
+    </result>
+</results>

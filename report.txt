@@ -6,13 +6,13 @@
 ***
 
 ***
-*** Start of report file generated on 04 Jun 2026 16:17:42 +0200
-*** Current working directory: REDACTED
-*** Current project file: /tmp/a3arm-grMbkH/state/apx
+*** Start of report file generated on 06 Aug 2026 11:42:26 +0200
+*** Current working directory: /home/untetilm/Documents/hi-wi-antonia-gesswein
+*** Current project file: /tmp/a3arm-vAHUAZ/state/apx
 *** Current analysis ID: aiT
 *** Current analysis type: aiT
-*** Host: REDACTED
-*** License: schneebeere.rz.uni-augsburg.de@42426 (Sebastian Altmeyer of Departement of Computer Science (Universität Augsburg) - #ALF1933, #ALF1933, #ALF1933)
+*** Host: untetilm-x1-carbon
+*** License: REDACTED
 *** Number of concurrent analyses: 1
 ***
 
@@ -21,9 +21,9 @@
 ***
 
   Executables:
-    - Executable: REDACTED
-  Report: REDACTED
-  Xml Results: REDACTED
+    - Executable: /home/untetilm/Documents/hi-wi-antonia-gesswein/build/zephyr/zephyr.elf
+  Report: /home/untetilm/Documents/hi-wi-antonia-gesswein/report.txt
+  Xml Results: /home/untetilm/Documents/hi-wi-antonia-gesswein/results.xml
 
 
 ***
@@ -59,8 +59,7 @@
 *** Analysis Settings for aiT
 
   Analysis Start: calculate_obstacles
-  Ais: REDACTED
-  Comment: 7228499145 cycles for feasible path
+  Ais: /home/untetilm/Documents/hi-wi-antonia-gesswein/aiT.ais
   Enable Valueanalyzer Features: true
 
 
@@ -74,12 +73,12 @@
 
 ***
 *** Control-Flow & Value Analysis for aiT
-*** Started on 04 Jun 2026 16:17:42 +0200
+*** Started on 06 Aug 2026 11:42:26 +0200
 ***
 
 This is isa-arm, Release: 25.10, Build: 18160044, Tag: auto/2025/10/17/1922, Branch: auto/2025/10
 (c) Copyright AbsInt Angewandte Informatik GmbH
-isa-arm.ais: Info: Reading /tmp/a3arm-grMbkH/analyses/1/a3-base.ais, charset: UTF-8 (default)...
+isa-arm.ais: Info: Reading /tmp/a3arm-vAHUAZ/analyses/1/a3-base.ais, charset: UTF-8 (default)...
     # architecture
     immutable attribute "architecture": "arm";
     
@@ -98,7 +97,7 @@ isa-arm.ais: Info: Reading /tmp/a3arm-grMbkH/analyses/1/a3-base.ais, charset: UT
     # analysis group
     immutable attribute "analysis_group": "";
 
-isa-arm.ais: Info: Reading REDACTED, charset: UTF-8 (default)...
+isa-arm.ais: Info: Reading /home/untetilm/Documents/hi-wi-antonia-gesswein/aiT.ais, charset: UTF-8 (default)...
     # This forces aiT to consider the input data to be filled with valid measurements, but it seems to not havy any effect on the WCET
     area "distances" contains {
             data: 1500;
@@ -145,17 +144,17 @@ isa-arm.ais: Info: Reading REDACTED, charset: UTF-8 (default)...
 
 isa-arm: Info: Reading binary 'zephyr.elf'.
     * Type: ELF
-    * Size: 838 KB (858136 bytes)
-    * MD5: 385053cd2cd3363782cb2fcfb23dcac6
+    * Size: 838 KB (858168 bytes)
+    * MD5: 5a5847aaa310b9aa274f252488f7365e
 isa-arm: Note: Sub-Format 'ARM'
 isa-arm: Note: Reading 32bit DWARFv4 debug information.
 isa-arm: Info: Using decoder for 'ARM' and compiler 'GCC'.
 isa-arm: Info: Guessed user stackpointer: 0x200060d0
-isa-arm: Progress: [16:17:42]: Starting decoding...
-isa-arm: Progress: [16:17:42]: Resolving conflict by re-iterating analysis... (re-iteration 1)
-isa-arm: Progress: [16:17:42]: Creating decoding outputs...
-isa-arm: Progress: [16:17:42]: Creating crl2 file '/tmp/a3arm-grMbkH/analyses/1/a3.crl'...
-isa-arm: Progress: [16:17:42]: Transforming loops & learning recursions...
+isa-arm: Progress: [11:42:27]: Starting decoding...
+isa-arm: Progress: [11:42:27]: Resolving conflict by re-iterating analysis... (re-iteration 1)
+isa-arm: Progress: [11:42:27]: Creating decoding outputs...
+isa-arm: Progress: [11:42:27]: Creating crl2 file '/tmp/a3arm-vAHUAZ/analyses/1/a3.crl'...
+isa-arm: Progress: [11:42:27]: Transforming loops & learning recursions...
 isa-arm: Info: 
     Constant memory areas found in debug information:
        [0x0]:4 ('uart_console_dev')
@@ -201,7 +200,7 @@ isa-arm: Info: Decoding statistics:
       * Routines: 21
       * Loops: 7
       * Blocks: 221
-      * Instructions: 1900
+      * Instructions: 1901
       * Memory reads: 672
       * Memory writes: 246
       * Computed branches: 0
@@ -210,9 +209,9 @@ isa-arm: Info: Decoding statistics:
       * Unresolved computed branches: 0
       * Unresolved computed calls: 0
       * Unresolved computed returns: 0
-isa-arm: Progress: [16:17:42]: Writing files file '/tmp/a3arm-grMbkH/analyses/1/a3.files'...
-isa-arm: Progress: [16:17:42]: Writing starts file '/tmp/a3arm-grMbkH/analyses/1/a3.starts'...
-isa-arm: Progress: [16:17:42]: Starting value analysis...
+isa-arm: Progress: [11:42:27]: Writing files file '/tmp/a3arm-vAHUAZ/analyses/1/a3.files'...
+isa-arm: Progress: [11:42:27]: Writing starts file '/tmp/a3arm-vAHUAZ/analyses/1/a3.starts'...
+isa-arm: Progress: [11:42:27]: Starting value analysis...
 isa-arm: Info #3091: The area [0x08000000..0x080001ff] annotated as read-only lies within the mirroring source area [0x08000000..0x080fffff].
     The annotation will become effective for the according mirrored area [0x0c000000..0x0c0001ff].
 isa-arm: Info #3091: The area [0x08000200..0x0800e74f] annotated as read-only lies within the mirroring source area [0x08000000..0x080fffff].
@@ -331,65 +330,67 @@ isa-arm: Info #3091: The area [0x08000200..0x0800e74f] for which byte content is
     The content will be mapped to the according mirrored area [0x0c000200..0x0c00e74f].
 isa-arm: Info #3091: The area [0x08000000..0x080001ff] for which byte content is given lies within mirroring source area.
     The content will be mapped to the according mirrored area [0x0c000000..0x0c0001ff].
-isa-arm: Progress: [16:17:42]: Calculating mapping 'Harmony' (max-length=2, default-unroll=2).
-isa-arm: Progress: [16:17:42]: Starting value analyzer in normal mode...
-isa-arm: Progress: [16:17:44]: In "fast_obstacles.c", line 417:
-    In routine 'extract_lines.L1', at address thumb::0x8000948:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..]':
-    Already processed 20144/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:17:46]: In routine 'extract_lines.L1', at address thumb::0x8000a50:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..]':
-    Already processed 36716/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:17:48]: In "fast_obstacles.c", line 429:
-    In routine 'extract_lines.L1', at address thumb::0x80009ee:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..]':
-    Already processed 50839/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:17:50]: In "fast_obstacles.c", line 427:
-    In routine 'extract_lines.L1', at address thumb::0x80009ca:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..]':
-    Already processed 65862/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:17:52]: In routine 'basicmath___ieee754_sqrtf.L2', at address thumb::0x8001426:
-    In context '..., thumb::0x80097b6->"sqrt_func", thumb::0x8009582->"basicmath___ieee754_sqrtf", thumb::0x80013e2->"basicmath___ieee754_sqrtf.L2"[1]':
-    Already processed 84223/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:17:54]: In "fast_obstacles.c", line 381:
-    In routine 'point_distance', at address thumb::0x800975c:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x80008f8->"extract_lines.L1"[2..], thumb::0x800098a->"point_distance"':
-    Already processed 99267/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:17:56]: In "fast_obstacles.c", line 381:
-    In routine 'point_distance', at address thumb::0x800975c:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x80008f8->"extract_lines.L1"[2..], thumb::0x800098a->"point_distance"':
-    Already processed 109236/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:17:58]: In "fast_obstacles.c", line 416:
-    In routine 'extract_lines.L1', at address thumb::0x8000a56:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000946->"extract_lines.L1"[2..]':
-    Already processed 131422/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:18:00]: In "wcclibm.c", line 515:
+isa-arm: Progress: [11:42:27]: Calculating mapping 'Harmony' (max-length=2, default-unroll=2).
+isa-arm: Progress: [11:42:27]: Starting value analyzer in normal mode...
+isa-arm: Progress: [11:42:28]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/wcclibm.c", line 519:
+    In routine 'basicmath___ieee754_sqrtf', at address thumb::0x800138e:
+    In context '..., thumb::0x8000846->"sqrt_func", thumb::0x8009582->"basicmath___ieee754_sqrtf"':
+    Already processed 20073/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:30]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/wcclibm.c", line 511:
+    In routine 'basicmath___ieee754_sqrtf', at address thumb::0x800135a:
+    In context '..., thumb::0x8000792->"sqrt_func", thumb::0x8009582->"basicmath___ieee754_sqrtf"':
+    Already processed 36575/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:32]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/wcclibm.c", line 515:
     In routine 'basicmath___ieee754_sqrtf', at address thumb::0x8001360:
     In context '..., thumb::0x80097b6->"sqrt_func", thumb::0x8009582->"basicmath___ieee754_sqrtf"':
-    Already processed 162444/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:18:02]: In "wcclibm.c", line 557:
-    In routine 'basicmath___ieee754_sqrtf', at address thumb::0x8001460:
+    Already processed 50655/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:34]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 427:
+    In routine 'extract_lines.L1', at address thumb::0x80009ca:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..]':
+    Already processed 65641/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:36]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/wcclibm.c", line 542:
+    In routine 'basicmath___ieee754_sqrtf.L2', at address thumb::0x8001432:
+    In context '..., thumb::0x80097b6->"sqrt_func", thumb::0x8009582->"basicmath___ieee754_sqrtf", thumb::0x80013e2->"basicmath___ieee754_sqrtf.L2"[2..]':
+    Already processed 83895/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:38]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 381:
+    In routine 'point_distance', at address thumb::0x800975c:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x80008f8->"extract_lines.L1"[2..], thumb::0x800098a->"point_distance"':
+    Already processed 99047/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:41]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/wcclibm.c", line 545:
+    In routine 'basicmath___ieee754_sqrtf.L2', at address thumb::0x800140e:
+    In context '..., thumb::0x80097b6->"sqrt_func", thumb::0x8009582->"basicmath___ieee754_sqrtf", thumb::0x80013e2->"basicmath___ieee754_sqrtf.L2"[2..]':
+    Already processed 109087/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:42]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 367:
+    In routine 'compute_pca_line', at address thumb::0x80007f2:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000946->"extract_lines.L1"[2..], thumb::0x80009ca->"compute_pca_line"':
+    Already processed 131512/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:44]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 124:
+    In routine 'point_stats_add', at address thumb::0x8009604:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000a6e->"extract_lines.L2"[2..], thumb::0x8000ae8->"point_stats_add"':
+    Already processed 163452/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:46]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/wcclibm.c", line 519:
+    In routine 'basicmath___ieee754_sqrtf', at address thumb::0x800138e:
     In context '..., thumb::0x80097b6->"sqrt_func", thumb::0x8009582->"basicmath___ieee754_sqrtf"':
-    Already processed 189876/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:18:03]: In "fast_obstacles.c", line 380:
+    Already processed 190259/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:48]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 380:
     In routine 'compute_pca_line', at address thumb::0x8000886:
     In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000a76->"extract_lines.L2"[2..], thumb::0x8000af8->"compute_pca_line"':
-    Already processed 217719/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:18:05]: In "fast_obstacles.c", line 456:
-    In routine 'extract_lines.L2', at address thumb::0x8000b36:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000a70->"extract_lines.L2"[2..]':
-    Already processed 246384/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Note #3096: In "fast_obstacles.c", line 102:
+    Already processed 217306/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:50]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 346:
+    In routine 'compute_pca_line', at address thumb::0x800066c:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000a70->"extract_lines.L2"[2..], thumb::0x8000af8->"compute_pca_line"':
+    Already processed 244819/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Note #3096: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 102:
     In routine 'polar_to_cartesian', at address thumb::0x80095da:
     In context '..., thumb::0x8009844->"read_distances", thumb::0x80005b4->"read_distances.L1"[1], thumb::0x8000620->"polar_to_cartesian"':
     Losing precision since the instruction thumb::0x80095da: 'vstr s15, [r3]' destroys 100% of the known memory content (13 cells).
-isa-arm: Progress: [16:18:07]: In "fast_obstacles.c", line 420:
-    In routine 'extract_lines.L1', at address thumb::0x800096a:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x80008f8->"extract_lines.L1"[2..]':
-    Already processed 276789/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:42:53]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 386:
+    In routine 'point_line_distance', at address thumb::0x80097c8:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x80008f8->"extract_lines.L1"[2..], thumb::0x8000a08->"point_line_distance"':
+    Already processed 275537/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
 isa-arm: Info: Value analyzer statistics (max-length=2, default-unroll=2, normal mode):
-      * Created 5374907 states.
-      * Created 3701364 output carriers.
+      * Created 5380067 states.
+      * Created 3704804 output carriers.
       * Processed 295411 nodes * contexts until fixed-point was reached.
       * Processed 0 nodes * contexts directly in the fixed-point.
       * Processed 1638 nodes * contexts again in the fixed-point.
@@ -399,7 +400,7 @@ isa-arm: Info: Value analyzer statistics (max-length=2, default-unroll=2, normal
       * At most 89 blocks * contexts in the worklist.
       * At most 72 data-flow values stored in the worklist.
       * At most 515 data-flow values stored globally.
-      * Allocated 66653k GC heap objects of total size 3413 MB.
+      * Allocated 67080k GC heap objects of total size 3441 MB.
 isa-arm: Info: Value analyzer iteration statistics (percent of processed nodes * contexts / routine):
      23% of iteration in 'compute_pca_line'
      16% of iteration in 'extract_lines.L1'
@@ -412,9 +413,9 @@ isa-arm: Info: Value analyzer iteration statistics (percent of processed nodes *
       3% of iteration in 'fabs_func'
       3% of iteration in 'point_stats_add'
       1% of iteration in 'basicmath___fabsf'
-isa-arm: Progress: [16:18:09]: Calculating mapping finished, reached 28 routines with overall 214 contexts.
-isa-arm: Progress: [16:18:09]: Starting backwards propagation of infeasiblity...
-isa-arm: Progress: [16:18:09]: Finished backwards propagation of infeasiblity, marked 6 blocks * contexts as backwards infeasible.
+isa-arm: Progress: [11:42:55]: Calculating mapping finished, reached 28 routines with overall 214 contexts.
+isa-arm: Progress: [11:42:55]: Starting backwards propagation of infeasiblity...
+isa-arm: Progress: [11:42:55]: Finished backwards propagation of infeasiblity, marked 6 blocks * contexts as backwards infeasible.
   Loop 'basicmath___ieee754_sqrtf.L1': fully unrolled in all contexts with [0] iterations
   Loop 'basicmath___ieee754_sqrtf.L2': libloopy matches in all contexts with [26] iterations (user annotation [26])
   Loop 'extract_lines.L4': using user annotation in all contexts with [361] iterations
@@ -486,7 +487,7 @@ isa-arm: Info: Memory Access Statistics:
      13: [0x0c05614c..0x0c0fffff]
 
  * memory areas considered as constant:
-      In "aiT.ais", line 2, column 18:
+      In "/home/untetilm/Documents/hi-wi-antonia-gesswein/aiT.ais", line 2, column 18:
       1: [0x20001408..0x200016d7]
 
          [0x20001408]:720 contains 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05
@@ -718,7 +719,7 @@ isa-arm: Info: Memory Access Statistics:
                                 value is [0x00000000..0x0000001f, 0x80000000..0xffffffff]
    instruction thumb::0x8001134 reads from [0x08001170]:4 (mirrored [0x0c001170]) (part of 'basicmath___ieee754_rem_pio2f')
                                 value is [0x080558cc]
-   instruction thumb::0x8001136 reads from [0x080558cc..0x08055948]:4 (modulo 2^2 = 0x0) (In "wcclibm.c", line 447: original access [0x00000000..0xfffffffc] and index restricted with 'basicmath_npio2_hw') (mirrored [0x0c0558cc..0x0c055948])
+   instruction thumb::0x8001136 reads from [0x080558cc..0x08055948]:4 (modulo 2^2 = 0x0) (In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/wcclibm.c", line 447: original access [0x00000000..0xfffffffc] and index restricted with 'basicmath_npio2_hw') (mirrored [0x0c0558cc..0x0c055948])
                                 value is [0x3fc90f00, 0x40490f00, 0x4096cb00, 0x40c90f00, 0x40fb5300, 0x4116cb00, 0x412fed00, 0x41490f00, 0x41623100, 0x417b5300, 0x418a3a00, 0x4196cb00, 0x41a35c00, 0x41afed00, 0x41bc7e00, 0x41c90f00, 0x41d5a000, 0x41e23100, 0x41eec200, 0x41fb5300, 0x4203f200, 0x420a3a00, 0x42108300, 0x4216cb00, 0x421d1400, 0x42235c00, 0x4229a500, 0x422fed00, 0x42363600, 0x423c7e00, 0x4242c700, 0x42490f00] (modulo 2^8 = 0x00)
    instruction thumb::0x800113e reads from [0x20006038]:4 (r13 + [0x00000038]) ('intc_xmc4xxx_data0.cb[1].port_id..')
    instruction thumb::0x8001142 reads from [0x2000603c]:4 (r13 + [0x0000003c]) ('intc_xmc4xxx_data0.cb[2].fn')
@@ -859,8 +860,8 @@ isa-arm: Info: Memory Access Statistics:
    instruction thumb::0x8001332 writes to [0x20005fbc..0x20005fdc]:4 (modulo 2^5 = 0x1c) (r13 + [0x0000001c])
                                 value is [0x80000000]
    instruction thumb::0x8001334 reads from [0x20005fa4..0x20005fc4]:4 (modulo 2^5 = 0x4) (r13 + [0x00000004])
-   instruction thumb::0x8001336 writes to [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
-   instruction thumb::0x8001338 reads from [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
+   instruction thumb::0x8001336 writes to [0x20005fac..0x20005fcc]:4 (modulo 2^5 = 0xc) (r13 + [0x0000000c])
+   instruction thumb::0x8001338 reads from [0x20005fac..0x20005fcc]:4 (modulo 2^5 = 0xc) (r13 + [0x0000000c])
    instruction thumb::0x800133a writes to [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
    instruction thumb::0x800133c reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
    instruction thumb::0x8001348 reads from [0x20005fa4..0x20005fc4]:4 (modulo 2^5 = 0x4) (r13 + [0x00000004])
@@ -936,26 +937,26 @@ isa-arm: Info: Memory Access Statistics:
                                 value is [0x01000000..0x0d000000]
    instruction thumb::0x8001492 writes to [0x20005fcc..0x20005fec]:4 (modulo 2^5 = 0xc) (r13 + [0x0000002c])
                                 value is [0x01000000..0x0d000000] (modulo 2^1 = 0x0)
-   instruction thumb::0x8001494 reads from [0x20005fcc..0x20005fec]:4 (modulo 2^5 = 0xc) (r13 + [0x0000002c])
-                                value is [0x01000000..0x0d000002]
-   instruction thumb::0x800149c writes to [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
-                                value is [0x3f800000..0x45800001]
-   instruction thumb::0x800149e reads from [0x20005fc8..0x20005fe8]:4 (modulo 2^5 = 0x8) (r13 + [0x00000028])
+   instruction thumb::0x8001494 reads from [0x20005fc8..0x20005fe8]:4 (modulo 2^5 = 0x8) (r13 + [0x00000028])
                                 value is [0x00000000..0x00000040, 0xffffffc1..0xffffffff]
-   instruction thumb::0x80014a2 reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
-                                value is [0x3f800000..0x45800001]
+   instruction thumb::0x800149a writes to [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+                                value is [0x1f800000..0x5f000000] (modulo 2^23 = 0x000000)
+   instruction thumb::0x800149c reads from [0x20005fcc..0x20005fec]:4 (modulo 2^5 = 0xc) (r13 + [0x0000002c])
+                                value is [0x01000000..0x0d000002]
+   instruction thumb::0x80014a2 reads from [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+                                value is [0x1f800000..0x5f000000] (modulo 2^23 = 0x000000)
    instruction thumb::0x80014a6 writes to [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
-                                value is [0x20000000..0x65800001]
+                                value is [0x1f800000..0x5fffffff]
    instruction thumb::0x80014a8 reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
-                                value is [0x20000000..0x65800001]
-   instruction thumb::0x80014aa writes to [0x20005fac..0x20005fcc]:4 (modulo 2^5 = 0xc) (r13 + [0x0000000c])
-                                value is [0x20000000..0x65800001]
-   instruction thumb::0x80014ac reads from [0x20005fac..0x20005fcc]:4 (modulo 2^5 = 0xc) (r13 + [0x0000000c])
-                                value is [0x20000000..0x65800001]
+                                value is [0x1f800000..0x5fffffff]
+   instruction thumb::0x80014aa writes to [0x20005fa8..0x20005fc8]:4 (modulo 2^5 = 0x8) (r13 + [0x00000008])
+                                value is [0x1f800000..0x5fffffff]
+   instruction thumb::0x80014ac reads from [0x20005fa8..0x20005fc8]:4 (modulo 2^5 = 0x8) (r13 + [0x00000008])
+                                value is [0x1f800000..0x5fffffff]
    instruction thumb::0x80014ae writes to [0x20005fb8..0x20005fd8]:4 (modulo 2^5 = 0x18) (r13 + [0x00000018])
-                                value is [0x20000000..0x65800001]
+                                value is [0x1f800000..0x5fffffff]
    instruction thumb::0x80014b0 reads from [0x20005fb8..0x20005fd8]:4 (modulo 2^5 = 0x18) (r13 + [0x00000018])
-                                value is [0x20000000..0x65800001]
+                                value is [0x1f800000..0x5fffffff]
    instruction thumb::0x80014bc reads from [0x20005fdc..0x20005ffc]:4 (modulo 2^5 = 0x1c) (r13 + [0x00000000])
                                 value is [0x20005fe0..0x20006000] (modulo 2^5 = 0x00)
 
@@ -967,13 +968,13 @@ isa-arm: Info: Memory Access Statistics:
                                 value is [0x00000000..0x1a000000]
    instruction thumb::0x8001400 reads from [0x20005fc0..0x20005fe0]:4 (modulo 2^5 = 0x0) (r13 + [0x00000020])
                                 value is [0x00000001, 0x00000002, 0x00000004, 0x00000008, 0x00000010, 0x00000020, 0x00000040, 0x00000080, 0x00000100, 0x00000200, 0x00000400, 0x00000800, 0x00001000, 0x00002000, 0x00004000, 0x00008000, 0x00010000, 0x00020000, 0x00040000, 0x00080000, 0x00100000, 0x00200000, 0x00400000, 0x00800000, 0x01000000]
-   instruction thumb::0x8001404 writes to [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+   instruction thumb::0x8001404 writes to [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
                                 value is [0x01000000..0x1a800000]
-   instruction thumb::0x8001406 reads from [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+   instruction thumb::0x8001406 reads from [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
                                 value is [0x01000000..0x1a800000]
    instruction thumb::0x8001408 reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
                                 value is [0x00000000..0xfffffffe] (modulo 2^1 = 0x0)
-   instruction thumb::0x800140e reads from [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+   instruction thumb::0x800140e reads from [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
                                 value is [0x01000000..0x1a800000]
    instruction thumb::0x8001410 reads from [0x20005fc0..0x20005fe0]:4 (modulo 2^5 = 0x0) (r13 + [0x00000020])
                                 value is [0x00000001, 0x00000002, 0x00000004, 0x00000008, 0x00000010, 0x00000020, 0x00000040, 0x00000080, 0x00000100, 0x00000200, 0x00000400, 0x00000800, 0x00001000, 0x00002000, 0x00004000, 0x00008000, 0x00010000, 0x00020000, 0x00040000, 0x00080000, 0x00100000, 0x00200000, 0x00400000, 0x00800000, 0x01000000]
@@ -981,7 +982,7 @@ isa-arm: Info: Memory Access Statistics:
                                 value is [0x02000000..0x1b000000]
    instruction thumb::0x8001416 reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
                                 value is [0x01000000..0x7ffffffe] (modulo 2^1 = 0x0)
-   instruction thumb::0x8001418 reads from [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+   instruction thumb::0x8001418 reads from [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
                                 value is [0x01000000..0x1a800000]
    instruction thumb::0x800141c writes to [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
                                 value is [0x00000000..0x7dfffffd, 0xe7800002..0xffffffff]
@@ -1824,14 +1825,14 @@ isa-arm: Info: Memory Access Statistics:
 
 
 ***
-*** Last process took 27 s and used not more than 267 MiB of memory
+*** Last process took 28 s and used not more than 270 MiB of memory
 *** 
 ***
 
 
 ***
 *** Cache & Pipeline Analysis for aiT
-*** Started on 04 Jun 2026 16:18:09 +0200
+*** Started on 06 Aug 2026 11:42:55 +0200
 ***
 
 This is cortexm4pipe, Release: 25.10, Build: 18160044, Tag: auto/2025/10/17/1922, Branch: auto/2025/10
@@ -1961,8 +1962,8 @@ cortexm4pipe: Info: Using branch target buffer analysis mode 'normal'.
       May Analysis: On
       May Analysis Start: Chaos Cache
 
-cortexm4pipe: Progress: [16:18:09]: Calculating mapping 'Harmony' (max-length=2, default-unroll=2).
-cortexm4pipe: Progress: [16:18:09]: Calculating mapping finished, reached 28 routines with overall 214 contexts.
+cortexm4pipe: Progress: [11:42:55]: Calculating mapping 'Harmony' (max-length=2, default-unroll=2).
+cortexm4pipe: Progress: [11:42:55]: Calculating mapping finished, reached 28 routines with overall 214 contexts.
 cortexm4pipe: Info #5135: Using path analysis variant 'Basic block level' as 'Pipeline state level' is too expensive.
 cortexm4pipe: Info: Pipeline analyzer statistics (max-length=2, default-unroll=2):
       * Processed 12884 nodes * contexts until fixed-point was reached.
@@ -1974,9 +1975,9 @@ cortexm4pipe: Info: Pipeline analyzer statistics (max-length=2, default-unroll=2
       * At most 533 states at once inside the worklist.
       * Allocated 6006k GC heap objects of total size 217 MB.
 cortexm4pipe: Info: Calling statistics:
-    79306 times called handle_one_instruction.
-    630781 times called handle_one_cpu_state.
-    3311465 times called single_step.
+    79326 times called handle_one_instruction.
+    630889 times called handle_one_cpu_state.
+    3311569 times called single_step.
 cortexm4pipe: Info: Calling statistics (percent of total single_step calls / routine):
     37% point_distance
         8% thumb::0x8009782 'vsub.f32 s15, s13, s15'
@@ -2026,51 +2027,51 @@ cortexm4pipe: Note: Prediction file event statistics:
     1987 times event 'edge start' written.
     1987 times event 'edge end' written.
     1632 times event 'block end' written.
-cortexm4pipe: Progress: [16:18:10]: Processing prediction file '/tmp/a3arm-grMbkH/analyses/1/a3.pf'.
-cortexm4pipe: Progress: [16:18:10]: Optimized prediction graph has 1980 nodes after 1 optimization round.
-cortexm4pipe: Progress: [16:18:10]: Computing routines that are never left...
-cortexm4pipe: Progress: [16:18:10]: Generating ILP file '/tmp/a3arm-grMbkH/analyses/1/a3.lp'...
-cortexm4pipe: Progress: [16:18:10]: Optimized out 1533 ILP variables via equality mapping...
-cortexm4pipe: Progress: [16:18:10]: Inserting loop & reducible recursion constraints...
-cortexm4pipe: Progress: [16:18:10]: Inserting loop nested bound constraints...
-cortexm4pipe: Progress: [16:18:10]: Inserting irreducible loop constraints...
-cortexm4pipe: Progress: [16:18:10]: Inserting irreducible recursion constraints...
-cortexm4pipe: Progress: [16:18:10]: Inserting user constraints...
+cortexm4pipe: Progress: [11:42:56]: Processing prediction file '/tmp/a3arm-vAHUAZ/analyses/1/a3.pf'.
+cortexm4pipe: Progress: [11:42:56]: Optimized prediction graph has 1980 nodes after 1 optimization round.
+cortexm4pipe: Progress: [11:42:56]: Computing routines that are never left...
+cortexm4pipe: Progress: [11:42:56]: Generating ILP file '/tmp/a3arm-vAHUAZ/analyses/1/a3.lp'...
+cortexm4pipe: Progress: [11:42:56]: Optimized out 1533 ILP variables via equality mapping...
+cortexm4pipe: Progress: [11:42:56]: Inserting loop & reducible recursion constraints...
+cortexm4pipe: Progress: [11:42:56]: Inserting loop nested bound constraints...
+cortexm4pipe: Progress: [11:42:56]: Inserting irreducible loop constraints...
+cortexm4pipe: Progress: [11:42:56]: Inserting irreducible recursion constraints...
+cortexm4pipe: Progress: [11:42:56]: Inserting user constraints...
 
 ***
-*** Last process took 1 s and used not more than 160 MiB of memory
+*** Last process took 1 s and used not more than 217 MiB of memory
 *** 
 ***
 
 
 ***
 *** ILP Solving for aiT
-*** Started on 04 Jun 2026 16:18:10 +0200
+*** Started on 06 Aug 2026 11:42:56 +0200
 ***
 
 This is clpsolve, Release: 25.10, Build: 18160044, Tag: auto/2025/10/17/1922, Branch: auto/2025/10
 (c) Copyright AbsInt Angewandte Informatik GmbH
-clpsolve: Progress: [16:18:10]: Reading lp file '/tmp/a3arm-grMbkH/analyses/1/a3.lp'...
-clpsolve: Progress: [16:18:10]: Finished reading lp file.
-clpsolve: Progress: [16:18:10]: pertValue was changed from 50 to -8
-clpsolve: Progress: [16:18:10]: integerTolerance was changed from 1e-06 to 1e-05
-clpsolve: Progress: [16:18:10]: 0 fixed, 15 tightened bounds, 0 strengthened rows, 0 substitutions
-clpsolve: Progress: [16:18:10]: processed model has 34 rows, 35 columns (35 integer (7 of which binary)) and 110 elements
-clpsolve: Progress: [16:18:10]: Integer solution of 1363216668 found by DiveCoefficient after 0 iterations and 0 nodes (0.01 seconds)
-clpsolve: Progress: [16:18:10]: Search completed - best objective 1363216668, took 0 iterations and 0 nodes (0.01 seconds)
-clpsolve: Progress: [16:18:10]: Maximum depth 0, 0 variables fixed on reduced cost
-clpsolve: Progress: [16:18:10]: Cuts at root node changed objective from 1.36322e+09 to 1.36322e+09
-clpsolve: Progress: [16:18:10]: Gomory was tried 0 times and created 0 cuts (0 seconds)
-clpsolve: Progress: [16:18:10]: Reduce-and-split was tried 0 times and created 0 cuts (0 seconds)
-clpsolve: Progress: [16:18:10]: Gomory(2) was tried 0 times and created 0 cuts (0 seconds)
-clpsolve: Progress: [16:18:10]: TwoMirCuts was tried 0 times and created 0 cuts (0 seconds)
-clpsolve: Progress: [16:18:10]: ZeroHalf was tried 0 times and created 0 cuts (0 seconds)
-clpsolve: Progress: [16:18:10]: Result - Optimal solution found
-clpsolve: Progress: [16:18:10]: Objective value:                1363216668
+clpsolve: Progress: [11:42:56]: Reading lp file '/tmp/a3arm-vAHUAZ/analyses/1/a3.lp'...
+clpsolve: Progress: [11:42:56]: Finished reading lp file.
+clpsolve: Progress: [11:42:56]: pertValue was changed from 50 to -8
+clpsolve: Progress: [11:42:56]: integerTolerance was changed from 1e-06 to 1e-05
+clpsolve: Progress: [11:42:56]: 0 fixed, 15 tightened bounds, 0 strengthened rows, 0 substitutions
+clpsolve: Progress: [11:42:56]: processed model has 34 rows, 35 columns (35 integer (7 of which binary)) and 110 elements
+clpsolve: Progress: [11:42:56]: Integer solution of 1363216668 found by DiveCoefficient after 0 iterations and 0 nodes (0.01 seconds)
+clpsolve: Progress: [11:42:56]: Search completed - best objective 1363216668, took 0 iterations and 0 nodes (0.01 seconds)
+clpsolve: Progress: [11:42:56]: Maximum depth 0, 0 variables fixed on reduced cost
+clpsolve: Progress: [11:42:56]: Cuts at root node changed objective from 1.36322e+09 to 1.36322e+09
+clpsolve: Progress: [11:42:56]: Gomory was tried 0 times and created 0 cuts (0 seconds)
+clpsolve: Progress: [11:42:56]: Reduce-and-split was tried 0 times and created 0 cuts (0 seconds)
+clpsolve: Progress: [11:42:56]: Gomory(2) was tried 0 times and created 0 cuts (0 seconds)
+clpsolve: Progress: [11:42:56]: TwoMirCuts was tried 0 times and created 0 cuts (0 seconds)
+clpsolve: Progress: [11:42:56]: ZeroHalf was tried 0 times and created 0 cuts (0 seconds)
+clpsolve: Progress: [11:42:56]: Result - Optimal solution found
+clpsolve: Progress: [11:42:56]: Objective value:                1363216668
     Enumerated nodes:               0
     Total iterations:               0
-    Time (CPU seconds):             0.007065
-    Time (Wallclock seconds):       0.00802016
+    Time (CPU seconds):             0.006811
+    Time (Wallclock seconds):       0.00800991
 clpsolve: Note: Value of objective function: 1363216668.
 clpsolve: Note: Solving succeeded.
 
@@ -2082,17 +2083,17 @@ clpsolve: Note: Solving succeeded.
 
 ***
 *** Reporting for aiT
-*** Started on 04 Jun 2026 16:18:10 +0200
+*** Started on 06 Aug 2026 11:42:56 +0200
 ***
 
 This is a3arm, Release: 25.10, Build: 18160044, Tag: auto/2025/10/17/1922, Branch: auto/2025/10
 (c) Copyright AbsInt Angewandte Informatik GmbH
-a3arm: Progress: [16:18:10]: Calculating mapping 'Harmony' (max-length=2, default-unroll=2).
-a3arm: Progress: [16:18:10]: Calculating mapping finished, reached 28 routines with overall 214 contexts.
-a3arm: Progress: [16:18:10]: Reading solve file '/tmp/a3arm-grMbkH/analyses/1/a3.erg'...
+a3arm: Progress: [11:42:56]: Calculating mapping 'Harmony' (max-length=2, default-unroll=2).
+a3arm: Progress: [11:42:56]: Calculating mapping finished, reached 28 routines with overall 214 contexts.
+a3arm: Progress: [11:42:56]: Reading solve file '/tmp/a3arm-vAHUAZ/analyses/1/a3.erg'...
    Computed Worst Case Execution Time (WCET) is 1363216668 cycles
 
-a3arm: Progress: [16:18:10]: Writing xml result file '/tmp/a3arm-grMbkH/analyses/1/a3-wcet-result.xml'...
+a3arm: Progress: [11:42:56]: Writing xml result file '/tmp/a3arm-vAHUAZ/analyses/1/a3-wcet-result.xml'...
 Infeasibility Information:
 
 Functions                      infeasible  infeasible blocks  infeasible instructions  infeasible edges
@@ -2101,7 +2102,7 @@ angle_to_radians                                      0 / 1                   0 
 basicmath___cosf                                     1 / 20                   1 / 79             2 / 26
 basicmath___fabsf                                     0 / 1                   0 / 20              0 / 1
 basicmath___ieee754_rem_pio2f                        0 / 27                  0 / 307             0 / 39
-basicmath___ieee754_sqrtf                            2 / 20                  8 / 128             4 / 29
+basicmath___ieee754_sqrtf                            2 / 20                  8 / 129             4 / 29
 basicmath___ieee754_sqrtf.L1           *              2 / 2                  10 / 10              3 / 3
 basicmath___ieee754_sqrtf.L2                          0 / 4                   0 / 29              0 / 6
 basicmath___kernel_cosf                              0 / 10                  0 / 105             0 / 14
@@ -2126,7 +2127,7 @@ read_distances.L1                                     0 / 6                   0 
 sin_func                                              0 / 2                   0 / 11              0 / 2
 sqrt_func                                             0 / 2                   0 / 11              0 / 2
 -------------------------------------------------------------------------------------------------------
-Total:                            1 / 28            8 / 221                23 / 1900           15 / 292
+Total:                            1 / 28            8 / 221                23 / 1901           15 / 292
 
  * WCET contributions of function 'angle_to_radians':
 
@@ -2443,10 +2444,10 @@ L1 Instruction Cache  645420012  26036548
 --------------------------------------------------------
 Total:                645420012  26036548
 
-a3arm: Progress: [16:18:10]: Writing GDL file '/tmp/a3arm-grMbkH/analyses/1/graph.gdl'...
+a3arm: Progress: [11:42:56]: Writing GDL file '/tmp/a3arm-vAHUAZ/analyses/1/graph.gdl'...
 
 ***
-*** Last process took 0 s and used not more than 46 MiB of memory
+*** Last process took 0 s and used not more than 0 MiB of memory
 *** 
 ***
 
@@ -2459,15 +2460,15 @@ a3arm: Progress: [16:18:10]: Writing GDL file '/tmp/a3arm-grMbkH/analyses/1/grap
 
 ***
 *** Checking contradictions for aiT
-*** Started on 04 Jun 2026 16:18:10 +0200
+*** Started on 06 Aug 2026 11:42:56 +0200
 ***
 
 This is isa-arm, Release: 25.10, Build: 18160044, Tag: auto/2025/10/17/1922, Branch: auto/2025/10
 (c) Copyright AbsInt Angewandte Informatik GmbH
 isa-arm: Info: Reading binary 'zephyr.elf'.
     * Type: ELF
-    * Size: 838 KB (858136 bytes)
-    * MD5: 385053cd2cd3363782cb2fcfb23dcac6
+    * Size: 838 KB (858168 bytes)
+    * MD5: 5a5847aaa310b9aa274f252488f7365e
 isa-arm: Note: Sub-Format 'ARM'
 isa-arm: Note: Reading 32bit DWARFv4 debug information.
 isa-arm: Info: Using decoder for 'ARM' and compiler 'GCC'.
@@ -2577,14 +2578,14 @@ isa-arm.ais: Info #1035: In "gui://hardware":
 isa-arm.ais: Info #1035: In "gui://hardware":
     Detected unused annotation for area '0xe0000000 .. 0xe00fffff'.
     Annotation: 'attribute "port_width": 32;'.
-isa-arm.ais: Info #1035: In "aiT.ais", line 2, column 18:
+isa-arm.ais: Info #1035: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/aiT.ais", line 2, column 18:
     Detected unused annotation for area '0x20001408 .. 0x200016d7'.
     Annotation: 'contains {
             data: 1500;
             width: 2 byte;
             pattern: repeat;
     }'.
-isa-arm: Progress: [16:18:11]: Starting value analysis...
+isa-arm: Progress: [11:42:56]: Starting value analysis...
 isa-arm: Info #3091: The area [0x08000000..0x080001ff] annotated as read-only lies within the mirroring source area [0x08000000..0x080fffff].
     The annotation will become effective for the according mirrored area [0x0c000000..0x0c0001ff].
 isa-arm: Info #3091: The area [0x08000200..0x0800e74f] annotated as read-only lies within the mirroring source area [0x08000000..0x080fffff].
@@ -2703,72 +2704,71 @@ isa-arm: Info #3091: The area [0x08000200..0x0800e74f] for which byte content is
     The content will be mapped to the according mirrored area [0x0c000200..0x0c00e74f].
 isa-arm: Info #3091: The area [0x08000000..0x080001ff] for which byte content is given lies within mirroring source area.
     The content will be mapped to the according mirrored area [0x0c000000..0x0c0001ff].
-isa-arm: Progress: [16:18:11]: Calculating mapping 'Harmony' (max-length=2, default-unroll=2).
-isa-arm: Progress: [16:18:11]: Calculating mapping finished, reached 28 routines with overall 214 contexts.
-isa-arm: Progress: [16:18:11]: Starting value analyzer in normal mode...
-isa-arm: Note #3096: In "fast_obstacles.c", line 102:
+isa-arm: Progress: [11:42:56]: Calculating mapping 'Harmony' (max-length=2, default-unroll=2).
+isa-arm: Progress: [11:42:56]: Calculating mapping finished, reached 28 routines with overall 214 contexts.
+isa-arm: Progress: [11:42:56]: Starting value analyzer in normal mode...
+isa-arm: Note #3096: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 102:
     In routine 'polar_to_cartesian', at address thumb::0x80095da:
     In context '..., thumb::0x8009844->"read_distances", thumb::0x80005b4->"read_distances.L1"[1], thumb::0x8000620->"polar_to_cartesian"':
     Losing precision since the instruction thumb::0x80095da: 'vstr s15, [r3]' destroys 100% of the known memory content (31 cells).
-isa-arm: Note #3096: In "fast_obstacles.c", line 103:
+isa-arm: Note #3096: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 103:
     In routine 'polar_to_cartesian', at address thumb::0x80095f8:
     In context '..., thumb::0x8009844->"read_distances", thumb::0x80005b4->"read_distances.L1"[1], thumb::0x8000620->"polar_to_cartesian"':
     Losing precision since the instruction thumb::0x80095f8: 'vstr s15, [r3, #+4]' destroys 100% of the known memory content (24 cells).
-isa-arm: Note #3096: In "fast_obstacles.c", line 102:
+isa-arm: Note #3096: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 102:
     In routine 'polar_to_cartesian', at address thumb::0x80095da:
     In context '..., thumb::0x8009844->"read_distances", thumb::0x80005b4->"read_distances.L1"[2..], thumb::0x8000620->"polar_to_cartesian"':
     Losing precision since the instruction thumb::0x80095da: 'vstr s15, [r3]' destroys 100% of the known memory content (27 cells).
-isa-arm: Note #3096: In "fast_obstacles.c", line 103:
+isa-arm: Note #3096: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 103:
     In routine 'polar_to_cartesian', at address thumb::0x80095f8:
     In context '..., thumb::0x8009844->"read_distances", thumb::0x80005b4->"read_distances.L1"[2..], thumb::0x8000620->"polar_to_cartesian"':
     Losing precision since the instruction thumb::0x80095f8: 'vstr s15, [r3, #+4]' destroys 100% of the known memory content (24 cells).
-isa-arm: Progress: [16:18:12]: In "wcclibm.c", line 519:
-    In routine 'basicmath___ieee754_sqrtf', at address thumb::0x800138e:
-    In context '..., thumb::0x8000792->"sqrt_func", thumb::0x8009582->"basicmath___ieee754_sqrtf"':
-    Already processed 18768/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:18:14]: In "fast_obstacles.c", line 420:
-    In routine 'extract_lines.L1', at address thumb::0x800096a:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..]':
-    Already processed 34021/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:18:17]: In "fast_obstacles.c", line 386:
-    In routine 'point_line_distance', at address thumb::0x80097c8:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..], thumb::0x8000a08->"point_line_distance"':
-    Already processed 46934/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:18:19]: In "fast_obstacles.c", line 417:
-    In routine 'extract_lines.L1', at address thumb::0x8000948:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..]':
-    Already processed 61482/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Note #3096: In "fast_obstacles.c", line 474:
+isa-arm: Progress: [11:42:58]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 381:
+    In routine 'point_distance', at address thumb::0x800975c:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..], thumb::0x800098a->"point_distance"':
+    Already processed 18701/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:43:01]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 346:
+    In routine 'compute_pca_line', at address thumb::0x800066c:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..], thumb::0x80009ca->"compute_pca_line"':
+    Already processed 33883/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:43:03]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 381:
+    In routine 'point_distance', at address thumb::0x800975c:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..], thumb::0x800098a->"point_distance"':
+    Already processed 46760/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:43:05]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 377:
+    In routine 'compute_pca_line', at address thumb::0x800085e:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..], thumb::0x80009ca->"compute_pca_line"':
+    Already processed 61253/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Note #3096: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 474:
     In routine 'extract_lines.L4', at address thumb::0x8000bc6:
     In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1]':
-    Losing precision since the instruction thumb::0x8000bc6: 'str r1, [r3]' destroys 100% of the known memory content (37 cells).
-isa-arm: Progress: [16:18:21]: In "fast_obstacles.c", line 124:
-    In routine 'point_stats_add', at address thumb::0x8009604:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000946->"extract_lines.L1"[2..], thumb::0x80009ba->"point_stats_add"':
-    Already processed 82067/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:18:23]: In "fast_obstacles.c", line 366:
-    In routine 'compute_pca_line', at address thumb::0x80007e0:
-    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000a76->"extract_lines.L2"[2..], thumb::0x8000af8->"compute_pca_line"':
-    Already processed 109214/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Progress: [16:18:25]: In "wcclibm.c", line 511:
-    In routine 'basicmath___ieee754_sqrtf', at address thumb::0x800135a:
+    Losing precision since the instruction thumb::0x8000bc6: 'str r1, [r3]' destroys 100% of the known memory content (38 cells).
+isa-arm: Progress: [11:43:07]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 386:
+    In routine 'point_line_distance', at address thumb::0x80097c8:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000946->"extract_lines.L1"[2..], thumb::0x8000a08->"point_line_distance"':
+    Already processed 81546/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:43:10]: In routine 'extract_lines.L2', at address thumb::0x8000b7e:
+    In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..], thumb::0x8000a76->"extract_lines.L2"[2..]':
+    Already processed 108623/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Progress: [11:43:12]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/wcclibm.c", line 493:
+    In routine 'basicmath___ieee754_sqrtf', at address thumb::0x8001324:
     In context '..., thumb::0x80097b6->"sqrt_func", thumb::0x8009582->"basicmath___ieee754_sqrtf"':
-    Already processed 135097/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Note #3096: In "fast_obstacles.c", line 474:
+    Already processed 134340/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Note #3096: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 474:
     In routine 'extract_lines.L4', at address thumb::0x8000bc6:
     In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[2..]':
-    Losing precision since the instruction thumb::0x8000bc6: 'str r1, [r3]' destroys 100% of the known memory content (26 cells).
-isa-arm: Progress: [16:18:26]: In "fast_obstacles.c", line 416:
-    In routine 'extract_lines.L1', at address thumb::0x8000a56:
+    Losing precision since the instruction thumb::0x8000bc6: 'str r1, [r3]' destroys 100% of the known memory content (27 cells).
+isa-arm: Progress: [11:43:13]: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 429:
+    In routine 'extract_lines.L1', at address thumb::0x80009ee:
     In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1], thumb::0x8000946->"extract_lines.L1"[2..]':
-    Already processed 149463/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
-isa-arm: Note #3096: In "ast_obstacles.c", line 474:
+    Already processed 149064/0/0 nodes * contexts (until fixed-point/directly in fixed-point/again in fixed-point).
+isa-arm: Note #3096: In "/home/untetilm/Documents/hi-wi-antonia-gesswein/src/fast_obstacles.c", line 474:
     In routine 'extract_lines.L4', at address thumb::0x8000bc6:
     In context '..., thumb::0x8009864->"extract_lines", thumb::0x8000898->"extract_lines.L4"[1]':
-    Losing precision since the instruction thumb::0x8000bc6: 'str r1, [r3]' destroys 100% of the known memory content (29 cells).
+    Losing precision since the instruction thumb::0x8000bc6: 'str r1, [r3]' destroys 100% of the known memory content (30 cells).
 isa-arm: Info: Value analyzer statistics (max-length=2, default-unroll=2, normal mode):
-      * Created 2758237 states.
-      * Created 1901535 output carriers.
+      * Created 2762629 states.
+      * Created 1904463 output carriers.
       * Processed 159832 nodes * contexts until fixed-point was reached.
       * Processed 0 nodes * contexts directly in the fixed-point.
       * Processed 886 nodes * contexts again in the fixed-point.
@@ -2778,7 +2778,7 @@ isa-arm: Info: Value analyzer statistics (max-length=2, default-unroll=2, normal
       * At most 109 blocks * contexts in the worklist.
       * At most 86 data-flow values stored in the worklist.
       * At most 321 data-flow values stored globally.
-      * Allocated 37158k GC heap objects of total size 1954 MB.
+      * Allocated 37251k GC heap objects of total size 1962 MB.
 isa-arm: Info: Value analyzer iteration statistics (percent of processed nodes * contexts / routine):
      16% of iteration in 'compute_pca_line'
      16% of iteration in 'basicmath___ieee754_sqrtf'
@@ -2857,7 +2857,7 @@ isa-arm: Info: Memory Access Statistics:
      13: [0x0c05614c..0x0c0fffff]
 
  * memory areas considered as constant:
-      In "aiT.ais", line 2, column 18:
+      In "/home/untetilm/Documents/hi-wi-antonia-gesswein/aiT.ais", line 2, column 18:
       1: [0x20001408..0x200016d7]
 
          [0x20001408]:720 contains 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05, 0xdc, 0x05
@@ -3093,8 +3093,8 @@ isa-arm: Info: Memory Access Statistics:
    instruction thumb::0x8001332 writes to [0x20005fbc..0x20005fdc]:4 (modulo 2^5 = 0x1c) (r13 + [0x0000001c])
                                 value is [0x80000000]
    instruction thumb::0x8001334 reads from [0x20005fa4..0x20005fc4]:4 (modulo 2^5 = 0x4) (r13 + [0x00000004])
-   instruction thumb::0x8001336 writes to [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
-   instruction thumb::0x8001338 reads from [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
+   instruction thumb::0x8001336 writes to [0x20005fac..0x20005fcc]:4 (modulo 2^5 = 0xc) (r13 + [0x0000000c])
+   instruction thumb::0x8001338 reads from [0x20005fac..0x20005fcc]:4 (modulo 2^5 = 0xc) (r13 + [0x0000000c])
    instruction thumb::0x800133a writes to [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
    instruction thumb::0x800133c reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
    instruction thumb::0x800135a reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
@@ -3150,26 +3150,26 @@ isa-arm: Info: Memory Access Statistics:
                                 value is [0x01000018..0x0d000000]
    instruction thumb::0x8001492 writes to [0x20005fcc..0x20005fec]:4 (modulo 2^5 = 0xc) (r13 + [0x0000002c])
                                 value is [0x01000018..0x0d000000] (modulo 2^1 = 0x0)
-   instruction thumb::0x8001494 reads from [0x20005fcc..0x20005fec]:4 (modulo 2^5 = 0xc) (r13 + [0x0000002c])
-                                value is [0x01000018..0x0d000000] (modulo 2^1 = 0x0)
-   instruction thumb::0x800149c writes to [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
-                                value is [0x3f80000c..0x45800000]
-   instruction thumb::0x800149e reads from [0x20005fc8..0x20005fe8]:4 (modulo 2^5 = 0x8) (r13 + [0x00000028])
+   instruction thumb::0x8001494 reads from [0x20005fc8..0x20005fe8]:4 (modulo 2^5 = 0x8) (r13 + [0x00000028])
                                 value is [0x00000000..0x0000003f, 0xffffffc1..0xffffffff]
-   instruction thumb::0x80014a2 reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
-                                value is [0x3f80000c..0x45800000]
+   instruction thumb::0x800149a writes to [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+                                value is [0x1f800000..0x5e800000] (modulo 2^23 = 0x000000)
+   instruction thumb::0x800149c reads from [0x20005fcc..0x20005fec]:4 (modulo 2^5 = 0xc) (r13 + [0x0000002c])
+                                value is [0x01000018..0x0d000000] (modulo 2^1 = 0x0)
+   instruction thumb::0x80014a2 reads from [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+                                value is [0x1f800000..0x5e800000] (modulo 2^23 = 0x000000)
    instruction thumb::0x80014a6 writes to [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
-                                value is [0x2000000c..0x65000000]
+                                value is [0x1f800000..0x5fffffff]
    instruction thumb::0x80014a8 reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
-                                value is [0x2000000c..0x65000000]
-   instruction thumb::0x80014aa writes to [0x20005fac..0x20005fcc]:4 (modulo 2^5 = 0xc) (r13 + [0x0000000c])
-                                value is [0x2000000c..0x65000000]
-   instruction thumb::0x80014ac reads from [0x20005fac..0x20005fcc]:4 (modulo 2^5 = 0xc) (r13 + [0x0000000c])
-                                value is [0x2000000c..0x65000000]
+                                value is [0x1f800000..0x5fffffff]
+   instruction thumb::0x80014aa writes to [0x20005fa8..0x20005fc8]:4 (modulo 2^5 = 0x8) (r13 + [0x00000008])
+                                value is [0x1f800000..0x5fffffff]
+   instruction thumb::0x80014ac reads from [0x20005fa8..0x20005fc8]:4 (modulo 2^5 = 0x8) (r13 + [0x00000008])
+                                value is [0x1f800000..0x5fffffff]
    instruction thumb::0x80014ae writes to [0x20005fb8..0x20005fd8]:4 (modulo 2^5 = 0x18) (r13 + [0x00000018])
-                                value is [0x2000000c..0x65000000]
+                                value is [0x1f800000..0x5fffffff]
    instruction thumb::0x80014b0 reads from [0x20005fb8..0x20005fd8]:4 (modulo 2^5 = 0x18) (r13 + [0x00000018])
-                                value is [0x2000000c..0x65000000]
+                                value is [0x1f800000..0x5fffffff]
    instruction thumb::0x80014bc reads from [0x20005fdc..0x20005ffc]:4 (modulo 2^5 = 0x1c) (r13 + [0x00000000])
                                 value is [0x20005fe0..0x20006000] (modulo 2^5 = 0x00)
 
@@ -3181,13 +3181,13 @@ isa-arm: Info: Memory Access Statistics:
                                 value is [0x00000000..0x1a000000]
    instruction thumb::0x8001400 reads from [0x20005fc0..0x20005fe0]:4 (modulo 2^5 = 0x0) (r13 + [0x00000020])
                                 value is [0x00000001, 0x00000002, 0x00000004, 0x00000008, 0x00000010, 0x00000020, 0x00000040, 0x00000080, 0x00000100, 0x00000200, 0x00000400, 0x00000800, 0x00001000, 0x00002000, 0x00004000, 0x00008000, 0x00010000, 0x00020000, 0x00040000, 0x00080000, 0x00100000, 0x00200000, 0x00400000, 0x00800000, 0x01000000]
-   instruction thumb::0x8001404 writes to [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+   instruction thumb::0x8001404 writes to [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
                                 value is [0x01000000..0x1a800000]
-   instruction thumb::0x8001406 reads from [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+   instruction thumb::0x8001406 reads from [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
                                 value is [0x01000000..0x1a800000]
    instruction thumb::0x8001408 reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
                                 value is [0x00000000..0xfffffffe] (modulo 2^1 = 0x0)
-   instruction thumb::0x800140e reads from [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+   instruction thumb::0x800140e reads from [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
                                 value is [0x01000000..0x1a800000]
    instruction thumb::0x8001410 reads from [0x20005fc0..0x20005fe0]:4 (modulo 2^5 = 0x0) (r13 + [0x00000020])
                                 value is [0x00000001, 0x00000002, 0x00000004, 0x00000008, 0x00000010, 0x00000020, 0x00000040, 0x00000080, 0x00000100, 0x00000200, 0x00000400, 0x00000800, 0x00001000, 0x00002000, 0x00004000, 0x00008000, 0x00010000, 0x00020000, 0x00040000, 0x00080000, 0x00100000, 0x00200000, 0x00400000, 0x00800000, 0x01000000]
@@ -3195,7 +3195,7 @@ isa-arm: Info: Memory Access Statistics:
                                 value is [0x02000000..0x1b000000]
    instruction thumb::0x8001416 reads from [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
                                 value is [0x02000000..0x7ffffffe] (modulo 2^1 = 0x0)
-   instruction thumb::0x8001418 reads from [0x20005fb4..0x20005fd4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000014])
+   instruction thumb::0x8001418 reads from [0x20005fb0..0x20005fd0]:4 (modulo 2^5 = 0x10) (r13 + [0x00000010])
                                 value is [0x01000000..0x1a800000]
    instruction thumb::0x800141c writes to [0x20005fd4..0x20005ff4]:4 (modulo 2^5 = 0x14) (r13 + [0x00000034])
                                 value is [0x00000000..0x7dfffffd, 0xe7800002..0xffffffff]
@@ -3949,14 +3949,14 @@ isa-arm: Info: Memory Access Statistics:
 
 
 ***
-*** Last process took 16 s and used not more than 254 MiB of memory
+*** Last process took 18 s and used not more than 251 MiB of memory
 *** 
 ***
 
 
 ***
 *** Creating HTML report for aiT
-*** Started on 04 Jun 2026 16:18:27 +0200
+*** Started on 06 Aug 2026 11:43:14 +0200
 ***
 
 
@@ -3968,7 +3968,7 @@ isa-arm: Info: Memory Access Statistics:
 
 
 ***
-*** End of report file generated on 04 Jun 2026 16:18:27 +0200 (total runtime 0:45 minutes)
+*** End of report file generated on 06 Aug 2026 11:43:14 +0200 (total runtime 0:47 minutes)
 *** Error count: 0
 *** Warning count: 0
 *** Number of decoding rounds: 1
