@@ -1,0 +1,46 @@
+# Copyright (c) 2025-2026 Tilmann Unte, Antonia Geßwein
+# SPDX-License-Identifier:  Apache-2.0
+
+# This forces aiT to consider the input data to be filled with valid measurements, but it seems to not havy any effect on the WCET
+area "distances" contains {
+        data: 1500;
+        width: 2 byte;
+        pattern: repeat;
+}
+
+# This loop is used for subnormal floats. We want to avoid this edge case, as it is not practically useful, but will dominate in the theoretical worst-case and add about 2 billion cycles
+loop "basicmath___ieee754_sqrtf.L1" infeasible;
+
+# Taken from TacleBench annotations
+loop "basicmath___ieee754_sqrtf.L2" {
+    bound: 25 .. 25;
+}
+
+# Fine-grained tracing is required in some cases to rule out mutually exclusive paths when looking for a feasible worst-case path
+routine "basicmath___kernel_cosf" begin partitioning: trace;
+routine "read_distances" begin partitioning: trace;
+routine "extract_lines" begin partitioning: trace;
+
+loop "read_distances.L1" {
+    bound: 360 .. 360;
+}
+
+loop "extract_lines.L1" {
+    bound: 0 .. 360;
+}
+
+loop "extract_lines.L2" {
+    bound: 0 .. 360;
+}
+
+loop "extract_lines.L3" {
+    bound: 6 .. 360;
+}
+
+loop "extract_lines.L4" {
+    bound: 360 .. 360;
+}
+
+# Read distances checks "if (valid_input_count > 2) and returns CLUSTER_ERR if too few values are found. aiT must not take this path.
+# This annotates a branch instruction. The exact position and type of branch instruction will depend on hardwar and compiler!
+routine "read_distances" instruction -> 158 bytes condition not taken ;
